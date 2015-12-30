@@ -29,6 +29,9 @@ class Welcome extends CI_Controller {
 		function kontak(){
 			$this->template->load('welcome_message','vkontak');
 		}
-		//$this->load->view('welcome_message');
+		
+		function login() {
+			$this->load->view('vlogin');
+		}
 	
 }

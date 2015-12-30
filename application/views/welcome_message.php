@@ -11,11 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  
  	<link href="navbar-fixed-top.css" rel="stylesheet">
 	
-	<script>
-  		$(function() {
-    		$( "#accordion" ).accordion();
-  		});
-  	</script>
+	
 </head>
 <body>
 
@@ -37,7 +33,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<li><a href="<?php echo base_url() ?>index.php/welcome/about">About</a></li>
 				<li><a href="<?php echo base_url() ?>index.php/welcome/kontak">Contact</a></li> 
 			</ul>			
- 		</div><!--/.nav-collapse -->
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="<?php echo base_url().'welcome/login' ?>">Login</a></li>			
+			</ul>
+ 		</div><!--/.nav-collapse --> 		
  	</div>
  </nav>
  <div class="container">
