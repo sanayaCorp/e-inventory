@@ -177,8 +177,6 @@ switch (ENVIRONMENT)
  */
 	// $assign_to_config['name_of_config_item'] = 'value of config item';
 
-
-
 // --------------------------------------------------------------------
 // END OF USER CONFIGURABLE SETTINGS.  DO NOT EDIT BELOW THIS LINE
 // --------------------------------------------------------------------
@@ -221,6 +219,10 @@ switch (ENVIRONMENT)
 	// The name of THIS file
 	define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
 
+	// The PHP file extension
+	// this global constant is deprecated.
+	define('EXT', '.php');
+
 	// Path to the system folder
 	define('BASEPATH', str_replace('\\', '/', $system_path));
 
@@ -229,6 +231,11 @@ switch (ENVIRONMENT)
 
 	// Name of the "system folder"
 	define('SYSDIR', trim(strrchr(trim(BASEPATH, '/'), '/'), '/'));
+
+	// Defined config e-inventory
+	if (file_exists(FCPATH.'appconfig'.EXT)) {
+		require FCPATH.'appconfig'.EXT;
+	}
 
 	// The path to the "application" folder
 	if (is_dir($application_folder))

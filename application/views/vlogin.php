@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'asset/bootstrap/dist/css/bootstrap.css' ?>">		
-	<script type="text/javascript" src="<?php echo base_url().'asset/jquery/dist/js/jquery.js' ?>"></script>
-	<script type="text/javascript" src="<?php echo base_url().'asset/bootstrap/dist/js/bootstrap.js' ?>"></script>
-	<script type="text/javascript" src="<?php echo base_url().'asset/jquery/dist/js/jquery.min.js' ?>"></script>
-</head>
-<body>
-</br></br></br></br></br></br>
-	<div class="container">
 		<div class="col-md-4 col-md-offset-4 kotak-login">
 			<div class="panel panel-success">
 				<div class="panel-heading">
@@ -32,5 +21,3 @@
 			</div>
 		</div>
 	</div>
-</body>
-</html>

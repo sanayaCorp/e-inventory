@@ -31,7 +31,7 @@ class Welcome extends CI_Controller {
 		}
 		
 		function login() {
-			$this->load->view('vlogin');
+			$this->template->load('welcome_message','auth/email/login');
 		}
 	
 }
